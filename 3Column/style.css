@@ -1,0 +1,108 @@
+:root {
+    --sedan-color: hsl(31, 77%, 52%);
+    --suv-color: hsl(184, 100%, 22%);
+    --luxury-color: hsl(179, 100%, 13%);
+    --white-color: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family:'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: var(--white-color);
+    color: var(--white-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    margin-top: 50px;
+    text-decoration: none;
+    padding: 15px 30px;
+    background: var(--white-color);
+    border: none;
+    border-radius: 30px;
+}
+
+a:hover {
+    background-color: transparent;
+    outline: 2px var(--white-color) solid;
+    color: var(--white-color);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75)
+}
+
+.grid {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 300px));
+    grid-auto-rows: minmax(500px, auto);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 45px;
+}
+
+.sedan {
+    background-color: var(--sedan-color);
+}
+
+.suv {
+    background-color: var(--suv-color);
+}
+
+.luxury {
+    background-color: var(--luxury-color);
+}
+
+.btn_sedan {
+    color: var(--sedan-color);
+}
+
+.btn_suv {
+    color: var(--suv-color);
+}
+
+.btn_luxury {
+    color: var(--luxury-color);
+}
+
+@media(max-width: 700px) {
+    .grid {
+        grid-template-columns: minmax(auto, 320px);
+        grid-template-rows: repeat(3, minmax(440px, auto));
+    }
+
+    .flex {
+        gap: 20px;
+    }
+
+    a {
+        margin-top: 20px;
+    }
+
+}
+
