@@ -35,6 +35,11 @@ a {
     color: hsl(0, 67%, 14%);
 }
 
+a:hover {
+    color: hsl(0, 67%, 44%);
+    font-weight: bold;
+}
+
 .card {
     max-width: 600px;
     background-color: hsl(0, 0%, 100%);
