@@ -1,8 +1,9 @@
 :root {
-    --primary-color: hsl(0, 67%, 34%);
-    --light-color: hsl(0, 67%, 99%);
-    --dark-color: hsl(0, 67%, 14%);
     --white-color: hsl(0, 0%, 100%);
+    --light-color: hsl(0, 67%, 99%);
+    --primary-color: hsl(0, 67%, 34%);
+    --dark-color: hsl(0, 67%, 14%);
+
 
     --font-main: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     --font-accent: 'Mada', sans-serif;
