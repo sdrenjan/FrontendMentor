@@ -1,3 +1,8 @@
+:root {
+    --primary-color: hsl(218, 44%, 22%);
+    --secondary-color: hsl(220, 15%, 55%);
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -9,12 +14,13 @@ body {
     background-color: hsl(212, 45%, 89%);
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 h1 {
-    color: hsl(218, 44%, 22%);
+    color: var(--primary-color);
     font-size: 22px;
     font-weight: 700;
     text-align: center;
@@ -22,7 +28,7 @@ h1 {
 }
 
 p {
-    color: hsl(220, 15%, 55%);
+    color: var(--secondary-color);
     font-size: 15px;
     font-weight: 400;
     text-align: center;
@@ -40,4 +46,15 @@ img {
     padding: 15px;
     border-radius: 20px;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+}
+
+.return {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.return:hover {
+    color: var(--secondary-color);
 }
